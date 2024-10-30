@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-todo-requires-issue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint Plugin to force TODO comments to include an issue number",
   "main": "lib/index.js",
   "repository": "git@github.com:maks-io/eslint-plugin-todo-requires-issue.git",

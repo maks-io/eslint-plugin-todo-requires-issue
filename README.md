@@ -40,6 +40,8 @@ yarn add -D eslint-plugin-todo-requires-issue
 
 Depending on how you configured your eslint instance, the following configuration might look a bit different.
 
+For example using a json format would require the keys to be in quotes etc.
+
 ```javascript
 // .eslintrc.js
 
@@ -57,6 +59,14 @@ module.exports = {
 ```
 
 This configuration would make eslint throw warnings whenever a `TODO` comment is found without any included `MY_PROJECT_<SOME_ISSUE_NUMBER>` string.
+
+## Pattern examples
+
+| Pattern                         | String examples                 |
+| ------------------------------- | ------------------------------- |
+| `"JIRA-\\d+"` (default pattern) | `"TODO fix via JIRA-4321"`      |
+| `"MY_PROJECT_\\d+"`             | `"TODO fix via MY_PROJECT_777"` |
+| `"#\\d+"`                       | `"TODO fix via #815"`           |
 
 ## If you enjoy using this...
 
